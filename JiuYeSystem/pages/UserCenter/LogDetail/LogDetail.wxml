@@ -1,0 +1,41 @@
+ <view class="body" > 
+	<view  class="container"> 
+        <view class="logcon">
+              <form>
+               <view class="rowbox">
+                 <text class="left" >标题：</text><text>{{title}}</text>
+               </view> 
+               <view class="rowbox">
+                 <text class="left" >提醒开关：</text>
+                  <view class="text">
+                      <text>关</text>
+                      <switch checked="false" bindchange="switchChange" class="swich"/>
+                      <text>开</text>
+                  </view>
+               </view>
+               <view class="{{switchChange?'show':'hide'}}">
+                  <view class="rowbox">
+                    <text class="left">提醒日期：</text>
+                    <view class="text">
+                      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="picker">
+      	                   {{date}}
+                        </view>
+                      </picker>
+                    </view>                  
+                  </view> 
+               </view>  
+               <view class="rowbox ph">
+               <text class="left">照片：</text> <text>查看照片</text>
+               </view> 
+                <view class="rowbox con">
+                 <text >内容：</text>
+                </view>  
+                <view class="rowbox context">
+                 <text>这是内容</text>
+                  
+                </view> 
+                 
+              </form>
+ 
+        </view>

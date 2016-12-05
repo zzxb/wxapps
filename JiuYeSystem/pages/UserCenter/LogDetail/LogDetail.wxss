@@ -1,0 +1,58 @@
+@import  "../../../app.wxss";
+.positionBar{
+    width: 100%;
+    float: left;
+    height: 1.3rem;
+    margin: 0px 0px 20px 0px;
+    
+}
+.positionBar image{
+     width: 13px;
+     height:15px;
+     margin: 0px 5px;
+}
+.logcon{
+    width: 100%;
+}
+.rowbox{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 3px solid #ececec;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255,0.4);
+    border-radius: 5px;
+}
+.rowbox.ph{
+    height: 80px;
+}
+.rowbox.con{
+    height: 30px;
+    border-bottom: 0px;
+} 
+
+ 
+.rowbox.context{
+    height: 300rpx;
+    border-top: 0px ;
+}
+.txstate{
+    margin-left: 40%;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+}
+ .left{
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+.text{
+    width: 70%;
+    padding:  0 10px;
+    line-height: 40px;
+}
+
+
+
+ 

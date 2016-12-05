@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="body"  >
+	<view class="container">
+	    <view class="logo">
+			<image  mode="aspectFit"  src="../../img/title.png"></image>
+		</view> 
+	    <view class="navBox">
+		    <block wx:for="{{navItems}}"> 
+			 <navigator url="{{item.url}}"> 
+			<view class="navItem"  >
+			    
+				      <image mode="aspectFill"  src="{{item.img}}"></image>
+					  <view class="mytext">{{item.name}}</view>
+				 
+			</view>
+			</navigator> 
+		    </block>
+		</view>
+	</view>
+</view>

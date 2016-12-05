@@ -1,0 +1,28 @@
+
+.LoginBox button{
+    border: 1px solid #cecece;
+}
+.text{   
+    border: 1px solid #0099cc;
+    padding: 0 10px;
+    height: 100rpx;
+    line-height: 100rpx;
+    width: 560rpx;
+    margin: 50rpx 0;
+    border-radius: 5px;
+}
+input{
+    height: 100rpx;
+}
+
+.logo{
+    width: 11rem;
+    height: 6rem;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 0;
+}
+.logo image{
+    width: 11rem;
+    height: 5rem;
+}

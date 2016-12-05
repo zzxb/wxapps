@@ -1,0 +1,67 @@
+/**index.wxss**/
+page{
+    background: url(../../img/con_bg3.png);
+    background-size: 750rpx;
+}
+
+.navBox{
+    width: 90%;
+    height: 300px;
+}
+.navItem{
+    width: 90%;
+    height: 170rpx;
+    margin-bottom: 5%;
+    border-radius: 7px ;
+    background-color: #ececec;
+    text-align: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.navItem  image{
+    float: left;
+    height: 140rpx;
+    width: 140rpx;
+    margin-left: 20px;
+
+}
+.mytext{
+    float: left;
+   margin-top: 10%;
+   margin-left:15%;
+}
+.logo{
+    width: 11rem;
+    height: 6rem;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 0;
+}
+.logo image{
+    width: 11rem;
+    height: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

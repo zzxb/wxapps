@@ -1,0 +1,15 @@
+<view class="logo"></view>
+<view class="search-box">
+    <form>
+        <view class="selectbox" bindtap="selectbox">{{selected}}</view>   
+        <view class="{{select?'show':'hidden'}}">
+            <view bindtap="selectName">姓名</view>
+            <view bindtap="selectYear">年级</view>
+        </view>  
+        <view class="input">
+            <input type="text" placeholder="搜索"/>
+        </view>
+        <icon type="search" size="20" class="btn-search"/>
+        <button form-type="submit" bindtap="searchshow"/>
+    </form>
+</view>

@@ -1,0 +1,79 @@
+@import  "../../../app.wxss";
+page{
+    background: #ececec;
+    font-size: 16px;
+}
+.logcon{
+    width: 100%;
+    margin-top: 10px;
+}
+.rowbox{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+.left{
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+.text{
+    width: 70%;
+    padding:  0 10px;
+    line-height: 40px;
+}
+.text input{
+    height: 40px;
+    line-height: 40px;
+}
+.swich{
+    margin: 0 5px;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 50px;
+}
+.btn1{
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+}
+.rowbox.btn button{
+    border: 1px solid #0099cc;
+    margin: 10px auto;
+    width: 90%;
+}
+.img1{
+    height: 40px;
+    width: 40px;
+    display: block;
+}
+.context{
+    min-height: 140px;
+    margin-top: -10px ;   
+    overflow:  auto; 
+}
+.textarea{
+    float: right;
+    width: 65%;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 2%;
+    word-wrap: break-word;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+
+
+ 

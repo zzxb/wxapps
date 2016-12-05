@@ -1,0 +1,16 @@
+<view class="body" style="height:800px">
+	<view  class="container"> 
+		<view class="logo">
+			<image  mode="aspectFit"  src="../../img/title.png"></image>
+		</view> 
+		<view class="LoginBox">
+			<view class="text">
+				<input type="text" placeholder="请输入用户名...."/>
+			</view>
+			<view class="text">
+				<input type="text" placeholder="请输入密码...." password="true"/>
+			</view>	 
+				<button bindtap="loginOk"> 登录</button>
+		</view>
+	</view>
+</view>

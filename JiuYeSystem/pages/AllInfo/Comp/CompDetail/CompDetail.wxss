@@ -1,0 +1,51 @@
+@import  "../../../../app.wxss";
+page{
+    background: url(../../../../img/con_bg3.png);
+}
+.positionBar{
+    width: 100%;
+    float: left;
+    height: 1.3rem;
+    margin: 0px 0px 20px 0px;
+    
+}
+.positionBar image{
+     width: 13px;
+     height:15px;
+     margin: 0px 5px;
+}
+
+.myRow{
+    align-content: center;
+    width: 100%;
+    margin: 4px 0px;
+    height:40px;   
+}
+.td01{
+    width: 30%;
+    float: left;
+    text-align:left;
+}
+.td02{
+    width: 68%;
+    float: left;
+  
+    text-align: left;
+}
+ 
+text{
+    text-align: left;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+ 
+
+<view class="con">
+        <view class="logcon">
+              <form>
+               <view class="rowbox">
+                 <text class="left" >标题：</text>
+                  <view class="text">
+                      <input type='text' placeholder="请输入标题....." />
+                  </view>
+               </view>               
+               <view class="rowbox">
+                 <text class="left" >提醒开关：</text>
+                  <view class="text">
+                      <text>关</text>
+                      <switch checked="false" bindchange="switchChange" class="swich"/>
+                      <text>开</text>
+                  </view>
+               </view>
+               <view class="{{switchChange?'show':'hide'}}">
+                  <view class="rowbox">
+                    <text class="left">提醒日期：</text>
+                    <view class="text">
+                      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="picker">
+      	                   {{date}}
+                        </view>
+                      </picker>
+                    </view>                  
+                  </view> 
+               </view> 
+               <view class="rowbox">
+                  <text class="left">照片：</text>
+                  <button bindtap="takephoto" class="btn1" >选择照片</button>
+               </view> 
+                <view class="rowbox">
+                    <text class="left">添加日程：</text>
+                    <view class="text">
+                      <input type='text' placeholder="请输入内容....." bindinput="bindKeyInput" maxlength="240"/>
+                  </view>
+                </view>  
+                <view class="rowbox context">
+                    <text class="left">日程内容：</text>
+                    <view class="textarea">{{inputValue}}</view>
+                </view> 
+                <view class="rowbox btn">
+                  <button form-type='submit'>保存</button>
+                  <button  type='button' bindtap="cancel">取消</button>
+                </view>
+              </form>
+ 
+        </view>
+</view>
+
+ 

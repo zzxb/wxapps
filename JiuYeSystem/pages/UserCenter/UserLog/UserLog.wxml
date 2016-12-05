@@ -1,0 +1,28 @@
+
+<view class="top">
+      <!--<view class="t_item">
+            <picker mode="date" value="{{y}}" start="2001" end="2030" bindchange="bindYearChange" fields="year">
+                  <view class="picker">
+                        {{year}}
+                  </view>
+            </picker>
+      </view>-->
+      <view class="t_item">
+            <picker mode="date" bindchange="bindMonthChange" fields="month">
+                  <view class="picker">
+                        {{thismonth}}
+                  </view>
+            </picker>
+      </view>
+</view>
+<view class="weekrow">
+      <view class="week" wx:for="{{weeks}}">
+            <text>{{item.weekday}}</text>
+      </view>
+</view>
+<view class="datebox">
+      <view class="daybox" wx:for="{{days}}" bindtap="AddLog" bindlongtap="LogDetail">
+            <text class="day?oday:nday">{{item.day}}</text>
+            <text class="day?othing:nthing">{{item.thing}}</text>
+      </view>
+</view>

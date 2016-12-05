@@ -1,0 +1,28 @@
+ <view class="body" > 
+	<view  class="container"> 
+<view class="search-box">
+    <form>
+        <view class="selectbox" bindtap="selectbox">{{selected}}</view>   
+        <view class="{{select?'show':'hidden'}}">
+            <view bindtap="selectName">按企业名称</view>
+            <view bindtap="selectLxr">按联系人</view>
+        </view>  
+        <view class="input">
+            <input type="text" placeholder="搜索"/>
+        </view>
+        <icon type="search" size="20" class="btn-search"/>
+        <button form-type="submit" bindtap="searchshow"/>
+    </form>
+</view>
+<view class="Compcont" hidden='{{hidden}}' >
+            <block wx:for="{{RowItems}}">
+                    <view class="{{item.isrow?'myRowr1':'myRowr2'}}">
+                        <view class="td">
+                            <navigator url='{{item.url}}'>{{item.compname}}</navigator>
+                        </view>
+                    </view>
+            </block>
+</view>
+
+   </view>
+</view>

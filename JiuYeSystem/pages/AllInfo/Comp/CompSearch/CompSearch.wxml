@@ -1,0 +1,20 @@
+ <view class="body" > 
+	<view  class="container"> 
+    <view class="logo"></view>
+        <view class="search-box">
+            <form>
+                <view class="selectbox" bindtap="selectbox">{{selected}}</view>            
+                <view class="{{select?'show':'hidden'}}">
+                    <view bindtap="selectName">按企业名称</view>
+                    <view bindtap="selectLxr">按联系人</view>
+                </view>  
+                <view class="input">
+                    <input type="text" placeholder="搜索"/>
+                </view>
+                <icon type="search" size="20" class="btn-search"/>
+                <button form-type="submit" bindtap="toCompD"/>
+            </form>
+        </view>
+         
+    </view>
+</view>

@@ -1,0 +1,47 @@
+{
+  "pages":[ 
+   
+    
+    "pages/login/login",
+    "pages/AllInfo/Comp/CompSearch/CompSearch",
+    "pages/AllInfo/Comp/CompShow/CompShow",
+    "pages/AllInfo/Students/StuSearch/StuSearch",
+    "pages/AllInfo/Students/SearchShow/SearchShow",
+    "pages/AllInfo/Students/studentinfo/studentinfo",
+    "pages/UserCenter/AddLog/AddLog",
+    "pages/index/index",
+    "pages/AllInfo/Comp/CompDetail/CompDetail",
+    "pages/UserCenter/UserLog/UserLog",
+    "pages/UserCenter/LogDetail/LogDetail",
+    
+     
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0099cc",
+    "navigationBarTitleText": "就业管理系统",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": { 
+    "selectedColor":"#0099cc",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "信息管理",
+      "iconPath":"img/tabicon11.png",
+      "selectedIconPath":"img/tabicon1.png"
+    }, {
+      "pagePath": "pages/index/index",
+      "text": "统计分析",
+      "iconPath":"img/tabicon22.png",
+      "selectedIconPath":"img/tabicon2.png"
+    }, {
+      "pagePath": "pages/UserCenter/UserLog/UserLog",
+      "text": "备忘录",
+      "iconPath":"img/tabicon33.png",
+      "selectedIconPath":"img/tabicon3.png"
+    }
+    ]
+  }  
+
+}

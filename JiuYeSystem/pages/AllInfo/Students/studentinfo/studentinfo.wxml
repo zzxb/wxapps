@@ -1,0 +1,111 @@
+<view class="body">
+  <view class="nav">
+    <view class="{{selected?'topnav':'default'}}" bindtap="selected">成绩信息</view>
+    <view class="{{selected1?'topnav':'default'}}" bindtap="selected1">就业现状</view>
+    <view class="{{selected2?'topnav':'default'}}" bindtap="selected2">能力认定</view>
+  </view>
+  <view class="con">
+    <!--以下是成绩信息-->
+    <view class="{{selected?'show':'hidden'}}">
+       <view class="gradecon"> 
+       <view class="row">
+          <view class="rowl">已修必修学分：</view>
+          <view class="rowr">120</view>
+       </view>
+       <view class="row">
+          <view class="rowl">已修选修学分：</view>
+          <view class="rowr">12</view>
+       </view>
+       <view class="row">
+          <view class="rowl">总  科  目  数：</view>
+          <view class="rowr">30</view>
+       </view>
+       <view class="row">
+          <view class="rowl">清考总科目数：</view>
+          <view class="rowr">0</view>
+       </view>
+       <view class="row">
+          <view class="rowl">中兴总科目数：</view>
+          <view class="rowr">12</view>
+       </view>
+       <view class="row">
+          <view class="rowl">清考中兴科目数：</view>
+          <view class="rowr">0</view>
+       </view>
+       </view>
+    </view>
+    <!--以下是就业期望-->
+    <view class="{{selected1?'show':'hidden'}}">
+      <view class="unemcon" wx:if="{{state==0}}"> 
+       <view class="row">
+          <view class="rowl">状态：</view>
+          <view class="rowr">已就业</view>
+       </view>
+       <view class="row">
+          <view class="rowl">实习企业：</view>
+          <view class="rowr">中兴济南公司</view>
+       </view>
+       <view class="row">
+          <view class="rowl">实习岗位：</view>
+          <view class="rowr">web前端</view>
+       </view>
+       <view class="row">
+          <view class="rowl">入职时间：</view>
+          <view class="rowr">2016-10-11</view>
+       </view>
+       <view class="row">
+          <view class="rowl">实习补贴：</view>
+          <view class="rowr">2000元/月</view>
+       </view>
+       <view class="row">
+          <view class="rowl">是否网签：</view>
+          <view class="rowr">否</view>
+       </view>
+       </view>
+
+       <view class="emcon" wx:if="{{state!=0}}"> 
+       <view class="row">
+          <view class="rowl">状态：</view>
+          <view class="rowr">考研</view>
+       </view>
+       <view class="row">
+          <view class="rowl">期望岗位：</view>
+          <view class="rowr">web前端</view>
+       </view>
+       <view class="row">
+          <view class="rowl">期望月薪：</view>
+          <view class="rowr">2000元/月</view>
+       </view>
+       <view class="row">
+          <view class="rowl">期望实习时间：</view>
+          <view class="rowr">2016-10-11</view>
+       </view>
+       <view class="row">
+          <view class="rowl">期望院校：</view>
+          <view class="rowr">山东大学</view>
+       </view>
+       <view class="row">
+          <view class="rowl">期望专业：</view>
+          <view class="rowr">大数据</view>
+       </view>
+       <view class="row">
+          <view class="rowl">结果：</view>
+          <view class="rowr">暂无</view>
+       </view>
+       </view>
+    </view>
+    <!--以下是能力认定-->
+    <view class="{{selected2?'show':'hidden'}}">
+        <view class="starbox">
+
+           <view class="astar">
+           </view>
+           <view class="bstar" style="width:{{star}}px">
+           </view>
+           <view class="startext">
+           <text>{{startext}}</text>
+           </view>
+        </view>
+    </view>
+  </view>
+</view>

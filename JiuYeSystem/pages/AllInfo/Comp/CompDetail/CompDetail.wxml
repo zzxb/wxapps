@@ -1,0 +1,79 @@
+<view class="body">
+	<view  class="container"> 
+        
+         
+
+
+        <view class="CompSearSearchCont">
+                   
+            <block wx:for="{{RowItems2}}">
+                    <view class="myRow">
+                        <view class="td01">
+                            <text>企业名称：</text> 
+                        </view>
+                        <view class="td02">
+                            <text>{{item.compname}}</text>
+                        </view>
+                    </view>
+                     <view class="myRow">
+                        <view class="td01">
+                            <text>岗位：</text> 
+                        </view>
+                        <view class="td02">
+                            <text>{{item.gw}}</text>
+                        </view>
+                    </view>
+                    <view class="myRow">
+                        <view class="td01">
+                            <text>联系人：</text> 
+                        </view>
+                        <view class="td02">
+                            <text>{{item.lxr}}</text>
+                        </view>
+                    </view>
+                    <view class="myRow">
+                        <view class="td01">
+                            <text>联系电话：</text> 
+                        </view>
+                        <view class="td02">
+                            <text>{{item.phone}}</text>
+                        </view>
+                    </view>
+                    <view class="myRow">
+                        <view class="td01">
+                            <text>邮箱：</text> 
+                        </view>
+                        <view class="td02">
+                            <text>{{item.email}}</text>
+                        </view>
+                    </view>
+                    <view class="myRow">
+                        <view class="td01">
+                            <text>地址：</text> 
+                        </view>
+                        <view class="td02">
+                            <text>{{item.address}}</text>
+                        </view>
+                    </view>
+                    <view class="myRow">
+                        <view class="td01">
+                            <text>招聘信息：</text> 
+                        </view>
+                        <view class="td02">
+                            <text>{{item.recruit}}</text>
+                        </view>
+                    </view>
+                    <view class="myRow">
+                        <view class="td01">
+                            <text>实习人数：</text> 
+                        </view>
+                        <view class="td02">
+                            <text>{{item.inStu}}</text>
+                        </view>
+                    </view>
+            </block>
+        
+        </view>
+
+    </view>
+</view>

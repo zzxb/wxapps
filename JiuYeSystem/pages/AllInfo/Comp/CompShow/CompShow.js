@@ -1,0 +1,84 @@
+{
+    Page({
+      data:{
+        // text:"这是一个页面"
+        select:false,
+        selected:"按企业名称",
+        RowItems:[
+         {
+            compname:'中兴济南公司1',
+            url:'../CompDetail/CompDetail',
+            isrow:true
+         },
+         {
+            compname:'中兴济南公司2',
+            url:'../CompDetail/CompDetail',
+            isrow:false
+         },
+         {
+            compname:'中兴济南公司3',
+             url:'../CompDetail/CompDetail',
+            isrow:true
+
+         },
+         {
+            compname:'中兴济南公司4',
+             url:'../CompDetail/CompDetail',
+            isrow:false
+         },
+         {
+            compname:'中兴济南公司5',
+            url:'../CompDetail/CompDetail',
+            isrow:true
+         },
+         {
+            compname:'中兴济南公司6',
+            url:'../CompDetail/CompDetail',
+            isrow:false
+         },
+         {
+            compname:'中兴济南公司7',
+             url:'../CompDetail/CompDetail',
+            isrow:true
+         } 
+     ]
+      },
+      selectbox:function(e){
+        this.setData({
+            select:true
+        })
+      },
+      selectName:function(e){
+        this.setData({
+          selected:"按企业名称",
+          select:false
+        })
+      },
+      selectLxr:function(e){
+        this.setData({
+          selected:"按联系人",
+          select:false
+        })
+      },
+      searchshow:function(){
+          wx.navigateTo({
+              url:'../CompShow/CompShow'
+          })
+      },
+      onLoad:function(options){
+        // 页面初始化 options为页面跳转所带来的参数
+      },
+      onReady:function(){
+        // 页面渲染完成
+      },
+      onShow:function(){
+        // 页面显示
+      },
+      onHide:function(){
+        // 页面隐藏
+      },
+      onUnload:function(){
+        // 页面关闭
+      }
+    })
+}

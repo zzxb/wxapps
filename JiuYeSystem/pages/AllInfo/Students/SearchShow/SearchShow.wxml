@@ -1,0 +1,31 @@
+<view class="search-box">
+    <form>
+        <view class="selectbox" bindtap="selectbox">{{selected}}</view>   
+        <view class="{{select?'show':'hidden'}}">
+            <view bindtap="selectName">姓名</view>
+            <view bindtap="selectYear">年级</view>
+        </view>  
+        <view class="input">
+            <input type="text" placeholder="搜索"/>
+        </view>
+        <icon type="search" size="20" class="btn-search"/>
+        <button form-type="submit" bindtap="searchshow"/>
+    </form>
+</view>
+<view class="studentshow">
+      <view class="row2">
+            <view class="row11">姓名</view>
+            <view class="row22">手机号</view>
+            <view class="row33">班级</view>
+      </view>
+           
+    <view class="{{item.isrow?'row1':'row2'}}"   wx:for="{{RowItems}}">
+            <navigator class="row11" url='{{item.url}}'  >{{item.stuname}}</navigator>   
+            <view class="row22">
+             <button class="row22 a" bindtap="makephone">
+             {{item.phone}} 
+             </button >
+             </view>
+            <view class="row33">{{item.stuyear+"级"+item.stuclass}}</view>
+     </view> 
+</view>
